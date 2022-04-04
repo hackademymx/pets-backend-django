@@ -11,7 +11,7 @@ services:
       - POSTGRES_PASSWORD=password321
     volumes:
       - 'pgdata-backend:/var/lib/postgresql/data'
-      
+
   api:
     depends_on:
       - postgres
@@ -29,3 +29,4 @@ services:
 
 volumes:
   api: {}
+  pgdata-backend: {}
